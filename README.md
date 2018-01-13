@@ -10,3 +10,7 @@ Variantes:
 3.- Numero de Bienes: 2 -> Numero de Porcentajes: 2.
 
 Aviso: El tamaño de la ventana puede cambiar segun las dimensiones de tu pantalla
+
+### Integrado GUI
+
+##### Version 1.0.1 
