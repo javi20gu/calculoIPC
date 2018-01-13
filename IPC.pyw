@@ -1,11 +1,13 @@
 from Xipc import *
 from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt5.QtGui import QIcon
 from sys import exit,argv
 from matplotlib.pyplot import plot,suptitle,subplot2grid,title,xlabel,ylabel,show
 
 class Aplicacion(QWidget):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent=None):
+        super(Aplicacion, self).__init__(parent)
+        self.setWindowIcon(QIcon("ipc.ico"))
         self.ui = Ui_Ventana_()
         self.ui.setupUi(self)
         self.porcentaje1 = 1
