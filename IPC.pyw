@@ -2,7 +2,7 @@ from Xipc import *
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtGui import QIcon
 from sys import exit,argv
-from matplotlib.pyplot import plot,suptitle,subplot2grid,title,xlabel,ylabel,show
+from matplotlib.pyplot import plot,suptitle,subplot2grid,title,xlabel,ylabel,show,Figure,get_current_fig_manager,figure
 
 class Aplicacion(QWidget):
     def __init__(self, parent=None):
@@ -142,6 +142,10 @@ class Aplicacion(QWidget):
             total = []
             total.append(Y1[1])
             total.append(Y2[1])
+            figure('IPC')
+            Figure()
+            thismanager = get_current_fig_manager()
+            thismanager.window.wm_iconbitmap("IPC.ico")
 
             suptitle("Evolución del IPC", fontsize=26)
             subplot2grid((2, 2), (0, 0), rowspan=2)
@@ -161,6 +165,7 @@ class Aplicacion(QWidget):
             xlabel("Numero de Años")
             ylabel("Valor del IPC ")
             plot(X, Y1)
+
             show()
         elif self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje4.isEnabled() == False and self.ui.inputPorcentaje3.isEnabled() == True:
             self.ui.botonGrafico.setEnabled(True)
@@ -194,6 +199,11 @@ class Aplicacion(QWidget):
             total = []
             total.append(Y1[1])
             total.append(Y2[1])
+
+            figure('IPC')
+            Figure()
+            thismanager = get_current_fig_manager()
+            thismanager.window.wm_iconbitmap("IPC.ico")
 
             suptitle("Evolución del IPC", fontsize=26)
             subplot2grid((2, 2), (0, 0), rowspan=2)
@@ -245,6 +255,11 @@ class Aplicacion(QWidget):
             total.append(Y1[1])
             total.append(Y2[1])
 
+            figure('IPC')
+            Figure()
+            thismanager = get_current_fig_manager()
+            thismanager.window.wm_iconbitmap("IPC.ico")
+            
             suptitle("Evolución del IPC", fontsize=26)
             subplot2grid((2, 2), (0, 0), rowspan=2)
             title("Total del IPC", fontsize=18)
@@ -266,7 +281,6 @@ class Aplicacion(QWidget):
             show()
         else:
             self.ui.botonGrafico.setEnabled(False)
-
 if __name__ == '__main__':
     app = QApplication(argv)
     miclase = Aplicacion()
