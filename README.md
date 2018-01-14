@@ -9,7 +9,7 @@ Variantes:
 
 3.- Numero de Bienes: 2 -> Numero de Porcentajes: 2.
 
-Aviso: El tamaño de la ventana puede cambiar segun las dimensiones de tu pantalla
+Aviso: El archivo ejecutable tiene dos partes, solo debes de ejecutar la primera parte
 
 ### Integrado GUI
 
