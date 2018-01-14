@@ -145,7 +145,7 @@ class Aplicacion(QWidget):
             figure('IPC')
             Figure()
             thismanager = get_current_fig_manager()
-            thismanager.window.wm_iconbitmap("IPC.ico")
+            thismanager.window.wm_iconbitmap("ipc.ico")
 
             suptitle("Evolución del IPC", fontsize=26)
             subplot2grid((2, 2), (0, 0), rowspan=2)
@@ -203,7 +203,7 @@ class Aplicacion(QWidget):
             figure('IPC')
             Figure()
             thismanager = get_current_fig_manager()
-            thismanager.window.wm_iconbitmap("IPC.ico")
+            thismanager.window.wm_iconbitmap("ipc.ico")
 
             suptitle("Evolución del IPC", fontsize=26)
             subplot2grid((2, 2), (0, 0), rowspan=2)
@@ -258,8 +258,8 @@ class Aplicacion(QWidget):
             figure('IPC')
             Figure()
             thismanager = get_current_fig_manager()
-            thismanager.window.wm_iconbitmap("IPC.ico")
-            
+            thismanager.window.wm_iconbitmap("ipc.ico")
+
             suptitle("Evolución del IPC", fontsize=26)
             subplot2grid((2, 2), (0, 0), rowspan=2)
             title("Total del IPC", fontsize=18)
