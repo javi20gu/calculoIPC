@@ -1,5 +1,5 @@
 # Programa 'IPC'
-Este programa calcula el IPC de dos años, el codigo esta diseñado para que solo puedas utilizar tres variantes.
+Este programa calcula el IPC de dos años, el codigo esta diseñado para que solo puedas utilizar 4 variantes.
 
 Variantes:
 
