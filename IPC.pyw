@@ -13,6 +13,7 @@ class Aplicacion(QWidget):
         self.porcentaje2= 1
         self.porcentaje3 = 1
         self.porcentaje4 = 1
+        self.porcentaje5 = 1
         self.ano01 = 1
         self.ano02 = 1
         self.ano03 = 1
@@ -22,19 +23,24 @@ class Aplicacion(QWidget):
         self.ano12 = 1
         self.ano13 = 1
         self.ano14 = 1
+        self.ano15 = 1
         self.ano21 = 1
         self.ano22 = 1
         self.ano23 = 1
         self.ano24 = 1
+        self.ano25 = 1
         self.calculo1 = 0
         self.calculo2 = 0
+
         self.ui.inputAno2.clicked.connect(self.activar1)
+        self.ui.inputBienes5.clicked.connect(self.activar5)
         self.ui.inputBienes4.clicked.connect(self.activar2)
         self.ui.inputBienes3.clicked.connect(self.activar3)
         self.ui.inputBienes2.clicked.connect(self.activar4)
         self.ui.botonGrafico.clicked.connect(self.boton)
     def activar1(self):
         if self.ui.inputAno2.isChecked() == True:
+            self.ui.inputBienes5.setEnabled(True)
             self.ui.inputBienes4.setEnabled(True)
             self.ui.inputBienes3.setEnabled(True)
             self.ui.inputBienes2.setEnabled(True)
@@ -44,18 +50,22 @@ class Aplicacion(QWidget):
             self.ui.inputPorcentaje2.setEnabled(True)
             self.ui.inputPorcentaje3.setEnabled(True)
             self.ui.inputPorcentaje4.setEnabled(True)
+            self.ui.inputPorcentaje5.setEnabled(False)
             self.ui.inputAno01.setEnabled(True)
             self.ui.inputAno02.setEnabled(True)
             self.ui.inputAno03.setEnabled(True)
             self.ui.inputAno04.setEnabled(True)
+            self.ui.inputAno05.setEnabled(False)
             self.ui.inputAno11.setEnabled(True)
             self.ui.inputAno12.setEnabled(True)
             self.ui.inputAno13.setEnabled(True)
             self.ui.inputAno14.setEnabled(True)
+            self.ui.inputAno15.setEnabled(False)
             self.ui.inputAno21.setEnabled(True)
             self.ui.inputAno22.setEnabled(True)
             self.ui.inputAno23.setEnabled(True)
             self.ui.inputAno24.setEnabled(True)
+            self.ui.inputAno25.setEnabled(False)
 
             if self.ui.inputAno2.isChecked() == True:
                 self.ui.botonGrafico.setEnabled(True)
@@ -68,18 +78,22 @@ class Aplicacion(QWidget):
             self.ui.inputPorcentaje2.setEnabled(True)
             self.ui.inputPorcentaje3.setEnabled(True)
             self.ui.inputPorcentaje4.setEnabled(False)
+            self.ui.inputPorcentaje5.setEnabled(False)
             self.ui.inputAno01.setEnabled(True)
             self.ui.inputAno02.setEnabled(True)
             self.ui.inputAno03.setEnabled(True)
             self.ui.inputAno04.setEnabled(False)
+            self.ui.inputAno05.setEnabled(False)
             self.ui.inputAno11.setEnabled(True)
             self.ui.inputAno12.setEnabled(True)
             self.ui.inputAno13.setEnabled(True)
             self.ui.inputAno14.setEnabled(False)
+            self.ui.inputAno15.setEnabled(False)
             self.ui.inputAno21.setEnabled(True)
             self.ui.inputAno22.setEnabled(True)
             self.ui.inputAno23.setEnabled(True)
             self.ui.inputAno24.setEnabled(False)
+            self.ui.inputAno25.setEnabled(False)
             if self.ui.inputAno2.isChecked() == True:
                 self.ui.botonGrafico.setEnabled(True)
             else:
@@ -91,24 +105,54 @@ class Aplicacion(QWidget):
             self.ui.inputPorcentaje2.setEnabled(True)
             self.ui.inputPorcentaje3.setEnabled(False)
             self.ui.inputPorcentaje4.setEnabled(False)
+            self.ui.inputPorcentaje5.setEnabled(False)
             self.ui.inputAno01.setEnabled(True)
             self.ui.inputAno02.setEnabled(True)
             self.ui.inputAno03.setEnabled(False)
             self.ui.inputAno04.setEnabled(False)
+            self.ui.inputAno05.setEnabled(False)
             self.ui.inputAno11.setEnabled(True)
             self.ui.inputAno12.setEnabled(True)
             self.ui.inputAno13.setEnabled(False)
             self.ui.inputAno14.setEnabled(False)
+            self.ui.inputAno15.setEnabled(False)
             self.ui.inputAno21.setEnabled(True)
             self.ui.inputAno22.setEnabled(True)
             self.ui.inputAno23.setEnabled(False)
             self.ui.inputAno24.setEnabled(False)
+            self.ui.inputAno25.setEnabled(False)
+            if self.ui.inputAno2.isChecked() == True:
+                self.ui.botonGrafico.setEnabled(True)
+            else:
+                self.ui.botonGrafico.setEnabled(False)
+    def activar5(self):
+        if self.ui.inputBienes5.isChecked() == True:
+            self.ui.inputPorcentaje1.setEnabled(True)
+            self.ui.inputPorcentaje2.setEnabled(True)
+            self.ui.inputPorcentaje3.setEnabled(True)
+            self.ui.inputPorcentaje4.setEnabled(True)
+            self.ui.inputPorcentaje5.setEnabled(True)
+            self.ui.inputAno01.setEnabled(True)
+            self.ui.inputAno02.setEnabled(True)
+            self.ui.inputAno03.setEnabled(True)
+            self.ui.inputAno04.setEnabled(True)
+            self.ui.inputAno05.setEnabled(True)
+            self.ui.inputAno11.setEnabled(True)
+            self.ui.inputAno12.setEnabled(True)
+            self.ui.inputAno13.setEnabled(True)
+            self.ui.inputAno14.setEnabled(True)
+            self.ui.inputAno15.setEnabled(True)
+            self.ui.inputAno21.setEnabled(True)
+            self.ui.inputAno22.setEnabled(True)
+            self.ui.inputAno23.setEnabled(True)
+            self.ui.inputAno24.setEnabled(True)
+            self.ui.inputAno25.setEnabled(True)
             if self.ui.inputAno2.isChecked() == True:
                 self.ui.botonGrafico.setEnabled(True)
             else:
                 self.ui.botonGrafico.setEnabled(False)
     def boton(self):
-        if self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje4.isEnabled() == True and self.ui.inputPorcentaje3.isEnabled() == True:
+        if self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje5.isEnabled() == False and self.ui.inputPorcentaje4.isEnabled() == True and self.ui.inputPorcentaje3.isEnabled() == True:
             self.ui.botonGrafico.setEnabled(True)
             self.porcentaje1 = self.ui.inputPorcentaje1.value()
             self.porcentaje2 = self.ui.inputPorcentaje2.value()
@@ -165,7 +209,7 @@ class Aplicacion(QWidget):
             plot(X, Y1)
 
             show()
-        elif self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje4.isEnabled() == False and self.ui.inputPorcentaje3.isEnabled() == True:
+        elif self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje5.isEnabled() == False and self.ui.inputPorcentaje4.isEnabled() == False and self.ui.inputPorcentaje3.isEnabled() == True:
             self.ui.botonGrafico.setEnabled(True)
             self.porcentaje1 = self.ui.inputPorcentaje1.value()
             self.porcentaje2 = self.ui.inputPorcentaje2.value()
@@ -222,7 +266,7 @@ class Aplicacion(QWidget):
             ylabel("Valor del IPC ")
             plot(X, Y1)
             show()
-        elif self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje4.isEnabled() == False and self.ui.inputPorcentaje3.isEnabled() == False:
+        elif self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje5.isEnabled() == False and self.ui.inputPorcentaje4.isEnabled() == False and self.ui.inputPorcentaje3.isEnabled() == False:
             self.ui.botonGrafico.setEnabled(True)
             self.porcentaje1 = self.ui.inputPorcentaje1.value()
             self.porcentaje2 = self.ui.inputPorcentaje2.value()
@@ -276,6 +320,67 @@ class Aplicacion(QWidget):
             xlabel("Numero de Años")
             ylabel("Valor del IPC ")
             plot(X, Y1)
+            show()
+        elif self.ui.inputAno2.isEnabled() == True and self.ui.inputPorcentaje5.isEnabled() == True and self.ui.inputPorcentaje4.isEnabled() == True and self.ui.inputPorcentaje3.isEnabled() == True:
+            self.ui.botonGrafico.setEnabled(True)
+            self.porcentaje1 = self.ui.inputPorcentaje1.value()
+            self.porcentaje2 = self.ui.inputPorcentaje2.value()
+            self.porcentaje3 = self.ui.inputPorcentaje3.value()
+            self.porcentaje4 = self.ui.inputPorcentaje4.value()
+            self.porcentaje5 = self.ui.inputPorcentaje5.value()
+            self.ano01 = self.ui.inputAno01.value()
+            self.ano02 = self.ui.inputAno02.value()
+            self.ano03 = self.ui.inputAno03.value()
+            self.ano04 = self.ui.inputAno04.value()
+            self.ano05 = self.ui.inputAno05.value()
+            self.ano11 = self.ui.inputAno11.value()
+            self.ano12 = self.ui.inputAno12.value()
+            self.ano13 = self.ui.inputAno13.value()
+            self.ano14 = self.ui.inputAno14.value()
+            self.ano15 = self.ui.inputAno15.value()
+            self.ano21 = self.ui.inputAno21.value()
+            self.ano22 = self.ui.inputAno22.value()
+            self.ano23 = self.ui.inputAno23.value()
+            self.ano24 = self.ui.inputAno24.value()
+            self.ano25 = self.ui.inputAno25.value()
+            self.calculos1 = (self.porcentaje1 * (self.ano11 / self.ano01)) + (self.porcentaje2 * (self.ano12 / self.ano02)) + (self.porcentaje3 * (self.ano13 / self.ano03)) + (self.porcentaje4 * (self.ano14 / self.ano04) + self.porcentaje5 * (self.ano15 / self.ano05))
+            self.calculos2 = (self.porcentaje1 * (self.ano21 / self.ano01)) + (self.porcentaje2 * (self.ano22 / self.ano02)) + (self.porcentaje3 * (self.ano23 / self.ano03)) + (self.porcentaje4 * (self.ano24 / self.ano04) + self.porcentaje5 * (self.ano25 / self.ano05))
+
+            X = [1, 2]
+            Y1 = []
+            Y2 = []
+
+            Y1.append(100)
+            Y2.append(100)
+            Y1.append(self.calculos1)
+            Y2.append(self.calculos2)
+            total = []
+            total.append(Y1[1])
+            total.append(Y2[1])
+            figure('IPC')
+            Figure()
+            thismanager = get_current_fig_manager()
+            thismanager.window.wm_iconbitmap("ipc.ico")
+
+            suptitle("Evolución del IPC", fontsize=26)
+            subplot2grid((2, 2), (0, 0), rowspan=2)
+            title("Total del IPC", fontsize=18)
+            xlabel("Numero de Años")
+            ylabel("Valor del IPC ")
+            plot(X, total)
+
+            subplot2grid((2, 2), (0, 1))
+            title("IPC del Año 1", fontsize=15)
+            xlabel("Numero de Años")
+            ylabel("Valor del IPC ")
+            plot(X, Y2)
+
+            subplot2grid((2, 2), (1, 1))
+            title("IPC del Año 2", fontsize=15)
+            xlabel("Numero de Años")
+            ylabel("Valor del IPC ")
+            plot(X, Y1)
+
             show()
         else:
             self.ui.botonGrafico.setEnabled(False)
