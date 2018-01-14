@@ -9,7 +9,7 @@ Variantes:
 
 3.- Numero de Bienes: 2 -> Numero de Porcentajes: 2.
 
-Aviso: El archivo ejecutable tiene dos partes, solo debes de ejecutar la primera parte
+Aviso: El archivo instalador se a dividido en dos partes, solo debes de ejecutar la primera parte, y se te creara el instalador
 
 ### Integrado GUI
 
