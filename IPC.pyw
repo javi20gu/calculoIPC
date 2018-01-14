@@ -28,7 +28,6 @@ class Aplicacion(QWidget):
         self.ano24 = 1
         self.calculo1 = 0
         self.calculo2 = 0
-
         self.ui.inputAno2.clicked.connect(self.activar1)
         self.ui.inputBienes4.clicked.connect(self.activar2)
         self.ui.inputBienes3.clicked.connect(self.activar3)
