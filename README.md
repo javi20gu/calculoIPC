@@ -1,7 +1,6 @@
 # Programa 'IPC'
 Este programa calcula el IPC de dos años, el codigo esta diseñado para que solo puedas utilizar 4 variantes.
 
-Variantes:
 
 Variantes | Bienes | Porcentajes
 -|-------|--------------------------------------
@@ -12,6 +11,6 @@ Variantes | Bienes | Porcentajes
 
 > Aviso: El archivo instalador se a dividido en dos partes, solo debes de ejecutar la primera parte, y se te creara el instalador
 
-> Integrado GUI
+- [x] Integrado GUI
 
 ##### v1.2.1 
