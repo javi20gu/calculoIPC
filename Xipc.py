@@ -635,3 +635,4 @@ class Ui_Ventana_(object):
         self.widget.setToolTip(_translate("Ventana_", "Versión 1.0.1 Gracias Por Utilizarla"))
         self.label.setWhatsThis(_translate("Ventana_", "Versión 1.2.1 Gracias Por Utilizarla"))
         self.label.setText(_translate("Ventana_", "Version 1.2.1"))
+        
